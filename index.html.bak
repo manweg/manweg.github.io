@@ -1,4 +1,4 @@
-<html><head><base href="https://websimcreationengine.com/photographer-portfolio/">
+<html><head><base href="https://manweg.github.io">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lisa's Photography Portfolio</title>
@@ -89,29 +89,29 @@
   <div class="gallery-container">
     <div class="gallery">
       <div class="photo active">
-        <img src="https://share.icloud.com/photos/082x55xOIkdGHjPIxj6Yi_zTA" alt="Serene mountain lake at sunset, vibrant colors reflecting on water" width="800" height="600">
+        <img src="https://raw.githubusercontent.com/manweg/manweg.github.io/main/fotos/foto1.jpeg" alt="Serene mountain lake at sunset, vibrant colors reflecting on water" width="800" height="600">
         <div class="caption">Mountain Reflections</div>
       </div>
-      <div class="photo">
-        <img src="https://websimcreationengine.com/photographer-portfolio/images/portrait1.jpg" alt="Close-up portrait of an elderly man with weathered face, black and white" width="800" height="600">
-        <div class="caption">Wisdom in Wrinkles</div>
-      </div>
-      <div class="photo">
-        <img src="https://websimcreationengine.com/photographer-portfolio/images/street1.jpg" alt="Busy city street at night with neon signs and people, long exposure" width="800" height="600">
-        <div class="caption">Urban Nightlife</div>
-      </div>
-      <div class="photo">
-        <img src="https://websimcreationengine.com/photographer-portfolio/images/nature1.jpg" alt="Macro shot of a colorful butterfly on a flower, shallow depth of field" width="800" height="600">
-        <div class="caption">Nature's Delicacy</div>
-      </div>
-      <div class="photo">
-        <img src="https://websimcreationengine.com/photographer-portfolio/images/architecture1.jpg" alt="Modern glass skyscraper against blue sky, geometric patterns" width="800" height="600">
-        <div class="caption">Urban Geometry</div>
-      </div>
-      <div class="photo">
-        <img src="https://websimcreationengine.com/photographer-portfolio/images/travel1.jpg" alt="Ancient temple ruins at sunset, warm golden light" width="800" height="600">
-        <div class="caption">Echoes of History</div>
-      </div>
+      <!-- <div class="photo"> -->
+      <!--   <img src="https://websimcreationengine.com/photographer-portfolio/images/portrait1.jpg" alt="Close-up portrait of an elderly man with weathered face, black and white" width="800" height="600"> -->
+      <!--   <div class="caption">Wisdom in Wrinkles</div> -->
+      <!-- </div> -->
+      <!-- <div class="photo"> -->
+      <!--   <img src="https://websimcreationengine.com/photographer-portfolio/images/street1.jpg" alt="Busy city street at night with neon signs and people, long exposure" width="800" height="600"> -->
+      <!--   <div class="caption">Urban Nightlife</div> -->
+      <!-- </div> -->
+      <!-- <div class="photo"> -->
+      <!--   <img src="https://websimcreationengine.com/photographer-portfolio/images/nature1.jpg" alt="Macro shot of a colorful butterfly on a flower, shallow depth of field" width="800" height="600"> -->
+      <!--   <div class="caption">Nature's Delicacy</div> -->
+      <!-- </div> -->
+      <!-- <div class="photo"> -->
+      <!--   <img src="https://websimcreationengine.com/photographer-portfolio/images/architecture1.jpg" alt="Modern glass skyscraper against blue sky, geometric patterns" width="800" height="600"> -->
+      <!--   <div class="caption">Urban Geometry</div> -->
+      <!-- </div> -->
+      <!-- <div class="photo"> -->
+      <!--   <img src="https://websimcreationengine.com/photographer-portfolio/images/travel1.jpg" alt="Ancient temple ruins at sunset, warm golden light" width="800" height="600"> -->
+      <!--   <div class="caption">Echoes of History</div> -->
+      <!-- </div> -->
     </div>
     <button id="prevBtn" class="nav-button">&#10094;</button>
     <button id="nextBtn" class="nav-button">&#10095;</button>
