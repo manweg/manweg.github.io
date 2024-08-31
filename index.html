@@ -1,4 +1,4 @@
-<html><head><base href="file:///Users/mwegel/private/git-repos/manweg.github.io/fotos">
+<html><head><base href="https://websimcreationengine.com/photographer-portfolio/">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lisa's Photography Portfolio</title>
@@ -87,8 +87,31 @@
   </header>
   
   <div class="gallery-container">
-    <div id="gallery" class="gallery">
-      <!-- Photos will be dynamically added here -->
+    <div class="gallery">
+      <div class="photo active">
+        <img src="https://share.icloud.com/photos/082x55xOIkdGHjPIxj6Yi_zTA" alt="Serene mountain lake at sunset, vibrant colors reflecting on water" width="800" height="600">
+        <div class="caption">Mountain Reflections</div>
+      </div>
+      <div class="photo">
+        <img src="https://websimcreationengine.com/photographer-portfolio/images/portrait1.jpg" alt="Close-up portrait of an elderly man with weathered face, black and white" width="800" height="600">
+        <div class="caption">Wisdom in Wrinkles</div>
+      </div>
+      <div class="photo">
+        <img src="https://websimcreationengine.com/photographer-portfolio/images/street1.jpg" alt="Busy city street at night with neon signs and people, long exposure" width="800" height="600">
+        <div class="caption">Urban Nightlife</div>
+      </div>
+      <div class="photo">
+        <img src="https://websimcreationengine.com/photographer-portfolio/images/nature1.jpg" alt="Macro shot of a colorful butterfly on a flower, shallow depth of field" width="800" height="600">
+        <div class="caption">Nature's Delicacy</div>
+      </div>
+      <div class="photo">
+        <img src="https://websimcreationengine.com/photographer-portfolio/images/architecture1.jpg" alt="Modern glass skyscraper against blue sky, geometric patterns" width="800" height="600">
+        <div class="caption">Urban Geometry</div>
+      </div>
+      <div class="photo">
+        <img src="https://websimcreationengine.com/photographer-portfolio/images/travel1.jpg" alt="Ancient temple ruins at sunset, warm golden light" width="800" height="600">
+        <div class="caption">Echoes of History</div>
+      </div>
     </div>
     <button id="prevBtn" class="nav-button">&#10094;</button>
     <button id="nextBtn" class="nav-button">&#10095;</button>
@@ -96,51 +119,13 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      const gallery = document.getElementById('gallery');
+      const photos = document.querySelectorAll('.photo');
       const prevBtn = document.getElementById('prevBtn');
       const nextBtn = document.getElementById('nextBtn');
       let currentIndex = 0;
-      let photos = [];
-
-      // Function to load images from the 'photos' directory
-      function loadImages() {
-        // In a real scenario, you'd need server-side code to read the directory
-        // For this example, we'll simulate it with a fetch request to a JSON file
-        fetch('photos.json')
-          .then(response => response.json())
-          .then(data => {
-            photos = data;
-            createPhotoElements();
-            showPhoto(0);
-          })
-          .catch(error => console.error('Error loading photos:', error));
-      }
-
-      function createPhotoElements() {
-        photos.forEach((photo, index) => {
-          const photoDiv = document.createElement('div');
-          photoDiv.className = 'photo';
-          if (index === 0) photoDiv.classList.add('active');
-
-          const img = document.createElement('img');
-          img.src = `photos/${photo.filename}`;
-          img.alt = photo.description || `Photo ${index + 1}`;
-          img.width = 800;
-          img.height = 600;
-
-          const caption = document.createElement('div');
-          caption.className = 'caption';
-          caption.textContent = photo.caption || `Photo ${index + 1}`;
-
-          photoDiv.appendChild(img);
-          photoDiv.appendChild(caption);
-          gallery.appendChild(photoDiv);
-        });
-      }
 
       function showPhoto(index) {
-        const photoElements = document.querySelectorAll('.photo');
-        photoElements.forEach((photo, i) => {
+        photos.forEach((photo, i) => {
           if (i === index) {
             photo.classList.add('active');
           } else {
@@ -192,9 +177,6 @@
           prevPhoto();
         }
       }
-
-      // Load images when the page is ready
-      loadImages();
     });
   </script>
 </body>
