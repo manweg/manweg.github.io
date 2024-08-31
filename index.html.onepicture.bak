@@ -1,0 +1,63 @@
+<html><head><base href="file:///C:/Users/YourUsername/Pictures/LisaPortfolio/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lisa's Fotogalerie - Einzelbild</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    h1 {
+        color: #333;
+    }
+    .image-container {
+        margin-top: 20px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    .error-message {
+        color: red;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lisa's Fotogalerie</h1>
+        <div class="image-container">
+            <img src="https://raw.githubusercontent.com/manweg/manweg.github.io/main/fotos/foto1.jpeg" alt="Foto 1 von Lisa" onerror="this.onerror=null; this.src=''; document.getElementById('error-message').style.display='block';">
+        </div>
+        <div id="error-message" class="error-message" style="display: none;">
+            Das Bild konnte nicht geladen werden. Bitte überprüfen Sie den Dateipfad und die Dateiendung.
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const img = document.querySelector('img');
+            img.addEventListener('load', function() {
+                console.log('Bild erfolgreich geladen!');
+            });
+            img.addEventListener('error', function() {
+                console.error('Fehler beim Laden des Bildes. Überprüfen Sie den Pfad: ' + this.src);
+            });
+        });
+    </script>
+</body>
+</html>
